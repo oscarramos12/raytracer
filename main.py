@@ -16,13 +16,11 @@ water = Material(spec = 64, ior = 1.33, matType = TRANSPARENT)
 glass = Material(spec = 64, ior = 1.5, matType = TRANSPARENT)
 diamond = Material(spec = 64, ior = 2.417, matType = TRANSPARENT)
 
-earth = Material(texture = Texture('earthDay.bmp'))
-box = Material(texture = Texture('box.bmp'))
 
 materiales=[mirror,stone,gold,diamond,wood]
 
 rtx = Raytracer(width,height)
-rtx.envmap = EnvMap('env3.bmp')
+rtx.envmap = EnvMap('env1.bmp')
 
 rtx.ambLight = AmbientLight(strength = 0.1)
 rtx.dirLight = DirectionalLight(direction = V3(1, -1, -2), intensity = 0.5)
